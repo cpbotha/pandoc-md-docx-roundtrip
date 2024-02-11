@@ -3,9 +3,15 @@ author: Charl P. Botha
 title: Round-trip from markdown to docx and back with pandoc
 ---
 
-This experiments checks to what extent we could use docx as a
+This is an experiment checks to what extent we could use docx as a
 self-contained storage format for markdown + media, whilst allowing for
 a limited amount of editing directly to the docx as well.
+
+-   README.md: this file.
+-   [README.docx](./README.docx): this file converted docx by pandoc as
+    show below.
+-   [README-from-docx.md](./README-from-docx.md): the docx, converted
+    back to markdown.
 
 # First H1 heading
 
@@ -73,7 +79,7 @@ Link to another file in this directory. What to do?
 ## Finally, a figure
 
 ![Used as caption in
-docx](./media/rId26.png "Image title: illustration of round-trip"){width="5.833333333333333in"
+docx](./media/rId28.png "Image title: illustration of round-trip"){width="5.833333333333333in"
 height="2.899095581802275in"}
 
 Used as caption in docx
