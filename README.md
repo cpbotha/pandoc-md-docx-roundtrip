@@ -26,8 +26,13 @@ Convert that docx back to markdown:
 ```shell
 # this lua filter reads the stored codeblock languages
 # and reconstructs the language-labelled codeblocks
-pandoc README.docx -o README-from-docx.md --lua-filter docx_to_md_filter.lua
+# --standalone is to reconstruct yaml
+# --extract-media=. required to etract images into ./media/
+pandoc README.docx -o README-from-docx.md --lua-filter docx_to_md_filter.lua \
+--standalone --extract-media=.
 ```
+
+# Some tests
 
 ## First H2 heading with codeblock
 
@@ -55,3 +60,7 @@ Why yes of course that works pretty well also.
 Link to another file in this directory. What to do?
 
 [the other file](./other_file.docx)
+
+## Finally, a figure
+
+![Used as caption in docx](./pandoc-md-docx.excalidraw.png "Image title: illustration of round-trip")
