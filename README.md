@@ -3,7 +3,11 @@ title: Round-trip from markdown to docx and back with pandoc
 author: Charl P. Botha
 ---
 
-This experiments checks to what extent we could use docx as a self-contained storage format for markdown + media, whilst allowing for a limited amount of editing directly to the docx as well.
+This is an experiment checks to what extent we could use docx as a self-contained storage format for markdown + media, whilst allowing for a limited amount of editing directly to the docx as well.
+
+- README.md: this file.
+- [README.docx](./README.docx): this file converted docx by pandoc as show below.
+- [README-from-docx.md](./README-from-docx.md): the docx, converted back to markdown.
 
 # First H1 heading
 
